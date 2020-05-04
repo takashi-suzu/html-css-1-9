@@ -1,6 +1,6 @@
 * {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
 .clearfix::after {
@@ -12,33 +12,43 @@ main {
 	width: 960px;
 	margin: 50px auto;
 }
-.list {
-	width: 960px;
-	padding: 50px auto;
-}
-.list-item {
-	list-style: none;
-	padding: 20px 0 20px 20px;
-}
-.list-item:nth-child(odd) {
-	background-color: #acabab;
-}
-.boxes {
-	width: 960px;
-	height: 680px;
-	padding: 50px 0;
-}
-.box {
-	width: 30%;
-	height: 200px;
-	margin: 0 5% 40px 0;
-	background-color: yellow;
+.step{
 	float: left;
+	width: 300px;
+	margin-right: 30px;
+	padding: 10px;
+	position: relative;
+	border: 1px solid #eee;
 }
-.box:nth-child(3n) {
+.step:last-child {
 	margin-right: 0;
-	margin-bottom: 0;
 }
-.box:first-child, .box:last-child, .box:nth-child(5) {
-	background-color: orange;
+.image1 {
+	background-image: url(img2/flow01.png);
+	height: 150px;
+	background-size: cover;
+	background-position: bottom;
+}
+.image2 {
+	background-image: url(img2/flow02.png);
+	height: 150px;
+	background-size: cover;
+	background-position: bottom;
+}
+.image3 {
+	background-image: url(img2/flow03.png);
+	height: 150px;
+	background-size: cover;
+	background-position: bottom;
+}
+.step-num {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #FF9A4B;
+	color: 3px;
+}
+
+.title {
+	margin: 15px 0 5px;
 }
